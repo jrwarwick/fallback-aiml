@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<!-- -->
+<!-- Free software (c) 2018 Justin Warwick (jrwarwick) -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.0 Tag Set Specification -->
+<!-- Last modified May 2018 -->
+<!-- -->
+	<category><pattern>VPN ADDRESS</pattern>
+		<template>The corporate VPN address is https://blueberry.bry.com</template>
+	</category>
+	<category><pattern>CORPORATE VPN URL</pattern>
+		<template><srai>VPN ADDRESS</srai></template>
+	</category>
+	<category><pattern>WEBMAIL ADDRESS</pattern>
+		<template>The corprorate webmail client address is https://outlook.office.com/owa/</template>
+	</category>
+	<category><pattern>CORPORATE WEBMAIL URL</pattern>
+		<template><srai>WEBMAIL ADDRESS</srai></template>
+	</category>
+	<category><pattern>WIFI SSID</pattern>
+		<template>Employee authenticated access is available via SSID BPC. Guest wireless internet access is available via SSID BPC Guest.</template>
+	</category>
+	<category><pattern>WIFI PASSWORD</pattern>
+		<template>Employees connecting to the BPC network SSID should use their Active Directory username and password to authenticate and get connected.</template>
+	</category>
+	<category><pattern>GUEST WIFI PASSWORD</pattern>
+		<template>Guests must request a temporary password from the service desk via email to support@bry.com or telephone call.</template>
+	</category>
+	<category><pattern>EMAIL ATTACHMENT SIZE LIMIT</pattern>
+		<template>10 Megabytes is the maximum size of an individual file attachment. A total of 100 Megabytes is allowed per message.</template>
+	</category>
+	<category><pattern>IT MANAGER</pattern>
+		<template>Thomas Edison.</template>
+	</category>
+	<category><pattern>HOW DO I CREATE AN IT SERVICE REQUEST</pattern>
+		<template>Email to support@bry.com is the preferred method of creating a new IT service desk requset. You may also call 661-616-3870.</template>
+	</category>
+</aiml>

@@ -52,7 +52,9 @@ class AimlFallback(FallbackSkill):
             self.kernel.bootstrap(brainFile=self.brain_path)
         else:
             aimls = listdir(self.aiml_path)
+            LOG.debug('..learning ')
             for aiml in aimls:
+                LOG.debug('...reading ' + aiml)
                 self.kernel.learn(os.path.join(self.aiml_path, aiml))
             self.kernel.saveBrain(self.brain_path)
         try:

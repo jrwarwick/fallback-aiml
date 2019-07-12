@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<!-- -->
+<!-- Free software (c) 2018 Justin Warwick (jrwarwick) -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.0 Tag Set Specification -->
+<!-- Last modified May 2018 -->
+<!-- -->
+	<think>
+		<set name="corporate_name">Berry Petroleum Company</set>
+		<set name="founder">C.J. Berry</set>
+		<set name="founding_date">April 4, 2017</set>
+		<set name="headquarters_location>Bakersfield, California</set>
+		<set name="ceo_name">John Doe</set>
+	</think>
+
+	<category><pattern>WHO FOUNDED THE COMPANY</pattern>
+		<template>The company's founder is <get name="founder"/> </template>
+	</category>
+	<category><pattern>WHO IS THE COMPANY FOUNDER</pattern>
+		<template><srai>WHO FOUNDED THE COMPANY</srai></template>
+	</category>
+	<category><pattern>WHO STARTED THE COMPANY</pattern>
+		<template><srai>WHO FOUNDED THE COMPANY</srai></template>
+	</category>
+	<category><pattern>WHO STARTED <get name="corporate_name"/></pattern>
+		<template><srai>WHO FOUNDED THE COMPANY</srai></template>
+	</category>
+	<category><pattern>WHO CREATED <get name="corporate_name"/></pattern>
+		<template><srai>WHO FOUNDED THE COMPANY</srai></template>
+	</category>
+
+	<category><pattern>YEAR OF INCORPORATION</pattern>
+		<template>The date of incorporation is <get name="founding_date"/></template>
+	</category>
+	<category><pattern>DATE OF EMERGENCE</pattern>
+		<template><srai>YEAR OF INCORPORATION</srai></template>
+	</category>
+	<category><pattern>WHEN IS BIRTHDATE OF THE COMPANY</pattern>
+		<template><srai>YEAR OF INCORPORATION</srai></template>
+	</category>
+	<category><pattern>WHAT IS BIRTHDATE OF THE COMPANY</pattern>
+		<template><srai>YEAR OF INCORPORATION</srai></template>
+	</category>
+
+	<category><pattern>WHERE ARE THE CORPORATE HEADQUARTERS</pattern>
+		<template>The corprorate headquarters offices are located in <get name="headquarters_location" /></template>
+	</category>
+	<category><pattern>WHERE IS THE MAIN OFFICE</pattern>
+		<template><srai>WHERE ARE THE CORPORATE HEADQUARTERS</srai></template>
+	</category>
+
+	<category><pattern>WHO IS THE CEO</pattern>
+		<template>The current Chief Executive Officer is <get name="ceo_name"/></template>
+	</category>
+	<category><pattern>WHO IS HIGHEST AUTHORITY IN THE COMPANY</pattern>
+		<template><srai>WHO IS THE CEO</srai></template>
+	</category>
+</aiml>

@@ -17,6 +17,12 @@
                       "type": "input",
                       "label": "Amount of chat lines before saving brain state",
                       "value": 5
+                  },
+                  {
+                      "name": "user_custom_aiml",
+                      "type": "input",
+                      "label": "User Custom AIML",
+                      "value": "<aiml>\n</aiml>"
                   }
               ]
           }
